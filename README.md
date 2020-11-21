@@ -45,36 +45,53 @@
       └─ xx.spec.ts # xx模块测试文件
 ```
 ## 依赖安装
+### 1、环境要求
+- `node`： 8.9+ (推荐 10+)
+- `npm`： 6+
+
+> Vue CLI  requires [Node.js](https://nodejs.org/en/) version 8.9 or above (v10+ recommended). You can manage multiple versions of Node on the same machine with [n](https://github.com/tj/n), [nvm](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows). 
+
+### 2、升级cli
+本项目是使用vue-cli搭建项目框架，需要用vue3，得先把vue-cli的版本升级到`vue-cli@4.5`以上：
+```
+npm install -g @vue/cli
+```
+> 因为不更新版本直接install，会报[vue-loader-v16](https://github.com/vuejs/vue-cli/pull/5718#issuecomment-673360542)相关的错。但是这个问题在[vue-cli@4.5.1修复](https://github.com/vuejs/vue-cli/blob/dev/CHANGELOG.md#bug-bug-fix-7)了。所以推荐更新的到最新版～
+
+### 3、安装依赖：
 ```
 npm install
 ```
-### host配置
+## host配置
+因为服务启动后需要访问域名，故可以先进行配置：
+
 ```
 #### xingorg1-ui
 127.0.0.1 dev.xingorg1-ui.com
 ```
-### 开发环境（编译+热更新）
+## 开发环境（编译+热更新）
 ```
 npm run serve
 # or
 npm run dev
 ```
 
-### 生产环境（打包+压缩）
+## 生产环境（打包+压缩）
 ```
 npm run build
 ```
 
-### 单元测试
+## 单元测试
 ```
 npm run test:unit
 ```
 
-### 代码校验和修复
+## 代码校验和修复
 ```
 npm run lint
 ```
 
-### 自定义配置
+## 自定义配置
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
 
