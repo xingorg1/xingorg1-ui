@@ -1,4 +1,7 @@
 # xingorg1-ui
+
+> 最新版迁移至团队[前端印记](https://github.com/DFE-evernote/axe-ui)，欢迎大家一起加入协作～
+
 基于vue@3.x的一套PC端前端UI组件库
 ## 技术栈
 * [Vue3.0](https://cn.vuejs.org/)
